@@ -4,54 +4,56 @@ import { Card } from "./ui/card";
 export function Experience() {
   const experiences = [
     {
-      title: "Website Developer",
-      company: " EMRCains",
-      period: "sep 2025 - Present",
+      title: "AUTOMATION ENGINEER",
+      company: "EMRCains NSTP NUST",
+      period: "Nov 2024 - Present",
       description:
-        "Worked across design and development to build modern, scalable web solutions using Figma, Next.js, and WordPress, transforming concepts into high-performance, user-focused digital experiences.",
+        "Designing and implementing end-to-end automation solutions for CRM, business operations, and AI-powered workflows, with a focus on GoHighLevel (GHL), Zoho CRM, and system integrations.",
       highlights: [
-        "Implemented CI/CD pipeline that reduced deployment times by 50%",
-        "Designed intuitive UI/UX in Figma, creating wireframes, design systems, and high-fidelity prototypes",
-
-        "Developed fast, SEO-optimized applications with Next.js using reusable, scalable components",
-
-        "Built and customized WordPress websites with custom themes, plugins, and CMS integrations",
-
-        "Improved performance, responsiveness, and user experience across all platforms",
-
-        "Ensured smooth collaboration between design and development through clean handoffs and best practices",
+        "Designed and deployed end-to-end automation workflows for CRM and operational processes",
+        "Built logic-based automations using triggers, conditions, pipelines, and task orchestration",
+        "Implemented GoHighLevel (GHL) and Zoho CRM automations for lead management and follow-ups",
+        "Integrated AI-powered assistants into workflows using APIs and webhooks",
+        "Developed and managed third-party integrations using Zapier, Make, and REST APIs",
+        "Automated data synchronization, tagging, notifications, and reporting, reducing manual effort by 50%",
       ],
     },
-    // {
-    //   title: "Software Engineer",
-    //   company: "Innovate Corp.",
-    //   period: "Jul 2019 - Dec 2020",
-    //   description:
-    //     "Developed and maintained key features for a SaaS product used by over 100,000 clients.",
-    //   highlights: [
-    //     "Developed and maintained key features for a SaaS product",
-    //     "Collaborated with cross-functional teams to define, design, and ship new features",
-    //   ],
-    // },
-    // {
-    //   title: "Junior Developer",
-    //   company: "WebCrafters LLC",
-    //   period: "May 2017 - Jun 2019",
-    //   description:
-    //     "Assisted in building and maintaining client websites using modern web technologies.",
-    //   highlights: [
-    //     "Assisted in building and maintaining client websites",
-    //     "Learned and applied best practices in web development",
-    //   ],
-    // },
+    {
+    title: "Machine Learning Intern",
+    company: "EMRChains",
+    period: "Sep 2024 - Oct 2024",
+    description:
+      "Worked on predictive analytics, process optimization, and deep learning model development for healthcare applications.",
+    highlights: [
+      "Performed data preprocessing and feature engineering",
+      "Built ML & DL models for workflow automation and predictive tasks",
+    ],
+  },
+  {
+    title: "Intern",
+    company: "Askari Bank",
+    period: "Jul 2024 - Aug 2024",
+    description:
+      "Assisted in data analytics and process automation projects within IT and operations.",
+    highlights: [
+      "Performed data analysis and reporting",
+      "Learned data management and statistical modeling for business insights",
+    ],
+  },
+   
   ];
 
   const education = [
     {
-      degree: "Bachelor of Software Engineering",
-      institution: "Islamic University of Technology",
-      year: "Graduated: May 2025",
+      degree: "Master of Science in Mathematics (AI Specialization)",
+      institution: "National University of Science and Technology (NUST), Islamabad",
+      year: "Sep 2023 – Aug 2025",
     },
+     {
+    degree: "Bachelor of Science in Mathematics",
+    institution: "University of Peshawar",
+    year: "Sep 2019 – Sep 2023",
+  },
   ];
 
   return (

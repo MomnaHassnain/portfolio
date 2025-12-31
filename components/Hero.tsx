@@ -121,7 +121,7 @@ export function Hero() {
 
                   <div className="relative w-32 h-32 rounded-full bg-gradient-to-br from-primary/30 to-accent/30 flex items-center justify-center border-2 border-primary/50 overflow-hidden backdrop-blur-sm">
                     <img
-                      src="/hexagen-image.png"
+                      src="/picture.jpg"
                       alt="Profile"
                       className="w-full h-full object-cover rounded-full"
                     />
@@ -146,7 +146,7 @@ export function Hero() {
                   Hi, I'm
                 </span>
                 <span className="block bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-gradient">
-                  M Zaryab
+                  Momna Hassnain
                 </span>
               </h1>
 
@@ -154,15 +154,17 @@ export function Hero() {
                 ref={subtitleRef}
                 className="text-xl md:text-2xl lg:text-3xl text-primary mb-4 md:mb-6"
               >
-                Junior Software Engineer
+                  AI Engineer & Automation Specialist | Zoho, GHL, Healthcare AI
               </p>
 
               <p
                 ref={descRef}
                 className="text-sm md:text-base text-muted-foreground max-w-xl mx-auto md:mx-0 mb-6 md:mb-8 leading-relaxed"
               >
-                Building scalable web applications with modern technologies.
-                Specialized in React, TypeScript, and figma.
+               AI Engineer and Researcher with expertise in automation, healthcare AI, and intelligent systems.
+               Skilled in building RAG-based chatbots, workflow automation, Zoho & GHL integrations, and AI-powered
+               solutions using Python, LLMs, and cloud platforms. Experienced in deploying AI for medical decision support 
+               and real-time automation.
               </p>
 
               {/* Social Links */}
@@ -171,15 +173,15 @@ export function Hero() {
                 className="flex items-center justify-center md:justify-start gap-3 mb-6 md:mb-8"
               >
                 {[
-                  { icon: Github, href: "https://github.com/zaryabali001", label: "GitHub" },
+                  { icon: Github, href: "https://github.com/MomnaHassnain", label: "GitHub" },
                   {
                     icon: Linkedin,
-                    href: "https://www.linkedin.com/in/mzaryabali/",
+                    href: "https://www.linkedin.com/in/syeda-momna-hassnain/",
                     label: "LinkedIn",
                   },
                   {
                     icon: Mail,
-                    href: "azaryab820@gmail.com",
+                    href: "momnahassnain74@gmail.com",
                     label: "Email",
                   },
                 ].map((social, index) => {
@@ -230,7 +232,7 @@ export function Hero() {
 
                 <div className="relative w-48 h-48 lg:w-56 lg:h-56 rounded-full bg-gradient-to-br from-primary/30 to-accent/30 flex items-center justify-center border-2 border-primary/50 overflow-hidden backdrop-blur-sm">
                   <img
-                    src="/hexagen-image.png"
+                    src="/picture.jpg"
                     alt="Profile"
                     className="w-full h-full object-cover rounded-full"
                   />
@@ -268,25 +270,33 @@ export function Hero() {
                   <div className="code-line overflow-hidden whitespace-nowrap pl-4">
                     <span className="text-blue-300">name</span>
                     <span className="text-foreground/60">:</span>{" "}
-                    <span className="text-green-400">'M Zaryab'</span>
+                    <span className="text-green-400">'Momna Hassnain'</span>
                     <span className="text-foreground/60">,</span>
                   </div>
                   <div className="code-line overflow-hidden whitespace-nowrap pl-4">
                     <span className="text-blue-300">role</span>
                     <span className="text-foreground/60">:</span>{" "}
-                    <span className="text-green-400">'Web Developer'</span>
+                    <span className="text-green-400">'AI & Automation Engineer'</span>
                     <span className="text-foreground/60">,</span>
                   </div>
                   <div className="code-line overflow-hidden whitespace-nowrap pl-4">
                     <span className="text-blue-300">skills</span>
                     <span className="text-foreground/60">:</span>{" "}
                     <span className="text-foreground/60">{"["}</span>
-                    <span className="text-green-400">'React'</span>
+                    <span className="text-green-400">'Python'</span>
                     <span className="text-foreground/60">,</span>{" "}
-                    <span className="text-green-400">'TypeScript&#39;</span>
+                    <span className="text-green-400">'LLMs'</span>
+                    <span className="text-foreground/60">,</span>{" "}
+                    <span className="text-green-400">'Healthcare AI'</span>
+                    <span className="text-foreground/60">,</span>{" "}
+                    <span className="text-green-400">'Automation'</span>
+                    <span className="text-foreground/60">,</span>{" "}
+                    <span className="text-green-400">'Zoho'</span>
+                    <span className="text-foreground/60">,</span>{" "}
+                    <span className="text-green-400">'GHL'</span>
                     <span className="text-foreground/60">{"]"}</span>
-                  </div>
-                  <div className="code-line overflow-hidden whitespace-nowrap">
+                  </div>             
+                <div className="code-line overflow-hidden whitespace-nowrap">
                     <span className="text-foreground">{"}"}</span>
                   </div>
                 </div>

@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-no-undef */
-import { ExternalLink, Github, Filter } from "lucide-react";
+import { Filter } from "lucide-react";
 import { Card } from "./ui/card";
 import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
@@ -9,96 +9,40 @@ import Image from "next/image";
 export function Projects() {
   const [activeFilter, setActiveFilter] = useState("All");
 
-  const filters = ["All", "React", "figma", "Next", "wordpress"];
+  const filters = ["All", "GHL", "Zoho", "Automation", "AI"];
 
   const projects = [
     {
-      title: "Doctor Appointment Booking System",
-      description: "",
-      image: "/doctor.png",
-      tags: ["JavaScript", "React", "Tailwind"],
-      category: "React",
-      github: "https://github.com/zaryabali001/Doctors-managemant-system-MERN",
-      demo: "https://prescripto.vercel.app/"
+      title: "GoHighLevel CRM Automation – Case Study",
+      description:
+        "Designed end-to-end CRM automation workflows with lead capture, pipeline management, notifications, and follow-ups.",
+      image: "/ghl.png",
+      tags: ["GHL", "CRM", "Automation", "Email/SMS/WhatsApp"],
+      category: "GHL",
     },
     {
-      title: "Hotel Booking App",
-      description: "",
-      image: "/hotel.png",
-      tags: ["JavaScript", "React", "Tailwind"],
-      category: "Machine Learning",
-      github: "",
-      demo: "https://hb-gs.vercel.app/",
+      title: "Zoho Flow Automation – Prototype",
+      description:
+        "Automated data synchronization, lead assignment, notifications, and reporting using Zoho CRM and Zoho Flow.",
+      image: "/zoho.png",
+      tags: ["Zoho CRM", "Zoho Flow", "Automation Rules", "APIs"],
+      category: "Zoho",
     },
     {
-      title: "GSAP Awwwards Website",
-      description: "",
-      image: "/awwards-CFh_on9N.png",
-      tags: ["JavaScript", "React", "Tailwind", "GSAP"],
-      category: "React",
-      github: "https://awwwards-website-clone.netlify.app/",
-      demo: "https://github.com/zaryabali001/GSAP-Awwwards-Website-main",
+      title: "Facebook Ads Automation – Demo",
+      description:
+        "Set up lead capture and campaign optimization workflows for Facebook Ads, including performance tracking and follow-ups.",
+      image: "/fb.png",
+      tags: ["Facebook Ads", "Marketing Automation", "Lead Management"],
+      category: "Automation",
     },
     {
-      title: "Food Delivery App",
-      description: "",
-      image: "/foodApp-CFmvF5j-.png",
-      tags: ["JavaScript", "React", "Tailwind"],
-      category: "Cloud",
-      github: "https://food-delivery-react-00.netlify.app/",
-    },
-    {
-      title: "Tour Guide (AI Powered)",
-      description: "",
-      image: "/tour-BmyhTLRr.png",
-      tags: ["React", "Next" , "Node", "OpenAi", "Redux", "Google Maps","MongoDB","Clerk" ],
-      category: "React",
-      github: "https://github.com/zaryabali001/fyp2",
-    },
-    {
-      title: "ai-imaging diagnos",
-      description: "",
-      image: "/ai-imaging.png ",
-      tags: ["TypeScript", "Next", "Tailwind", "APIs"],
-      category: "Next",
-      github: "https://github.com/zaryabali001/ai-imaging",
-      demo: "https://ai-imaging-vt81.vercel.app/"
-    },
-    {
-      title: "video-generation (Veo3 Clone)",
-      description: "",
-      image: "/ve03.png",
-      tags: ["TypeScript", "Next", "Tailwind", "APIs"],
-      category: "Next",
-      github: "https://github.com/zaryabali001/video-generation",
-      demo: "https://video-generation-three.vercel.app/"
-    },
-    {
-      title: "recursive-safeguard-updated",
-      description: "",
-      image: "/safeguard.png",
-      tags: ["TypeScript", "Next", "Tailwind"],
-      category: "Next",
-      github: "https://github.com/zaryabali001/recursive-safeguard-updated",
-      demo: "https://recursive-safeguard-fxlt.vercel.app/"
-    },
-    {
-      title: "Styleframe Awwwards Clone",
-      description: "",
-      image: "/styleframe.png",
-      tags: ["TypeScript", "Next", "Tailwind", "GSAP"],
-      category: "Next",
-      github: "",
-      demo: "https://recursive-safeguard-fxlt.vercel.app/"
-    },
-    {
-      title: "Dr-patient",
-      description: "",
-      image: "/dr.png",
-      tags: ["TypeScript", "Next", "Tailwind", "APIs"],
-      category: "Next",
-      github: "https://github.com/zaryabali001/updated-code",
-      demo: "https://updated-code-6myr.vercel.app/"
+      title: "VAPI Voice AI Workflow – Internal Demo",
+      description:
+        "Voice AI system for call handling, lead qualification, appointment booking, and automated summaries.",
+      image: "/vapi.png",
+      tags: ["VAPI", "Voice AI", "CRM Integration", "Automation"],
+      category: "AI",
     },
   ];
 
@@ -118,8 +62,7 @@ export function Projects() {
             </span>
             <h2 className="text-4xl md:text-5xl mb-4">Featured Work</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto mb-8">
-              A selection of my recent work, from full-stack web applications to
-              data science models and open-source contributions
+              Case studies and internal demos highlighting workflow automation, CRM integrations, and AI applications.
             </p>
 
             {/* Filters */}
@@ -179,44 +122,9 @@ export function Projects() {
                       </Badge>
                     ))}
                   </div>
-                  <div className="flex items-center gap-3">
-                    {project.github && (
-                      <a
-                        href={project.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-sm text-muted-foreground hover:text-primary transition-colors flex items-center gap-1"
-                      >
-                        <Github className="w-4 h-4" />
-                        Code
-                      </a>
-                    )}
-                    {project.demo && (
-                      <a
-                        href={project.demo}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-sm text-muted-foreground hover:text-primary transition-colors flex items-center gap-1"
-                      >
-                        <ExternalLink className="w-4 h-4" />
-                        Live Demo
-                      </a>
-                    )}
-                  </div>
                 </div>
               </Card>
             ))}
-          </div>
-
-          {/* View More */}
-          <div className="text-center mt-12">
-            <Button
-              variant="outline"
-              className="border-primary/50 hover:bg-primary/10"
-            >
-              View All Projects on GitHub
-              <Github className="w-4 h-4 ml-2" />
-            </Button>
           </div>
         </div>
       </div>

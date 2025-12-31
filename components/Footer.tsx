@@ -19,7 +19,7 @@ export function Footer() {
             <div className="md:col-span-1">
               <div className="flex items-center gap-2 mb-4">
                 <Code2 className="w-6 h-6 text-primary" />
-                <span className="text-xl">John Doe</span>
+                <span className="text-xl">Momna Hassnain</span>
               </div>
               <p className="text-sm text-muted-foreground">
                 Building exceptional digital experiences with modern technologies.
@@ -94,21 +94,21 @@ export function Footer() {
               <ul className="space-y-2">
                 <li>
                   <a
-                    href="mailto:azaryab820@gmail.com"
+                    href="mailto:momnahassnain74@gmail.com"
                     className="text-sm text-muted-foreground hover:text-primary transition-colors"
                   >
-                    azaryab820@gmail.com
+                    momnahassnain74@gmail.com
                   </a>
                 </li>
                 <li>
                   <a
-                    href="tel:+923090270809"
+                    href="tel:+923129677550"
                     className="text-sm text-muted-foreground hover:text-primary transition-colors"
                   >
-                    +92 309 0270809
+                    +92 312 9677550
                   </a>
                 </li>
-                <li className="text-sm text-muted-foreground">Rawalpindi, Pakistan</li>
+                <li className="text-sm text-muted-foreground">Islamabad, Pakistan</li>
               </ul>
             </div>
           </div>
@@ -117,7 +117,7 @@ export function Footer() {
           <div className="pt-8 border-t border-border">
             <div className="flex flex-col md:flex-row items-center justify-between gap-4">
               <p className="text-sm text-muted-foreground text-center md:text-left">
-                © {currentYear} M Zaryab. All rights reserved.
+                © {currentYear} Momna Hassnain. All rights reserved.
               </p>
               <div className="flex items-center gap-1 text-sm text-muted-foreground">
                 <span>Made with</span>

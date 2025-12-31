@@ -83,7 +83,7 @@ export function Header() {
                 <div className="absolute -inset-1 bg-primary/20 rounded-full blur-sm opacity-0 group-hover:opacity-100 transition-opacity"></div>
               </div>
               <span className="text-xl bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                M Zaryab
+                Momna Hassnain
               </span>
             </div>
 
@@ -119,7 +119,7 @@ export function Header() {
               </div>
               <div>
                 <div className="text-xs text-muted-foreground">Portfolio</div>
-                <div className="text-sm">John Doe</div>
+                <div className="text-sm">Momna Hassnain</div>
               </div>
             </div>
             <button

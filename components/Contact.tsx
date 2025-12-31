@@ -31,24 +31,24 @@ export function Contact() {
     {
       icon: Mail,
       label: "Email",
-      value: "azaryab820@gmail.com",
+      value: "momnahassnain74@gmail.com",
       link: "mailto:john.doe@example.com",
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+92 309 0270809",
+      value: "+92 312 9677550",
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "Rawalpindi, Pakistan",
+      value: "Islamabad, Pakistan",
     },
   ];
 
   const socialLinks = [
-    { icon: Github, label: "GitHub", link: "https://github.com/zaryabali001" },
-    { icon: Linkedin, label: "LinkedIn", link: "https://www.linkedin.com/in/mzaryabali/" },
+    { icon: Github, label: "GitHub", link: "https://github.com/MomnaHassnain" },
+    { icon: Linkedin, label: "LinkedIn", link: "https://www.linkedin.com/in/syeda-momna-hassnain-5239932b4/" },
   ];
 
   return (

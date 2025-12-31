@@ -1,59 +1,62 @@
-import { Code, Database, Cloud, Wrench } from "lucide-react";
+import { Wrench, Cloud, Database, Workflow } from "lucide-react";
 import { Card } from "./ui/card";
 import { Progress } from "./ui/progress";
 
 export function Skills() {
   const skillCategories = [
     {
-      icon: Code,
-      title: "Frameworks",
+      icon: Workflow,
+      title: "CRM & Workflow Automation",
       skills: [
-        { name: "  React", level: 85 },
-        { name: " Next.js", level: 90 },
-        { name: " Tailwind CSS", level: 88 },
-        { name: " Node.js", level: 70 },
-      ],
-    },
-    {
-      icon: Database,
-      title: "Languages & Databases",
-      skills: [
-        { name: "PostgreSQL", level: 85 },
-        { name: "MongoDB", level: 82 },
-        { name: "Redis", level: 78 },
-        { name: "MySQL", level: 80 },
+        { name: "GoHighLevel (GHL) Automation", level: 85 },
+        { name: "Zoho CRM", level: 82 },
+        { name: "Zoho Flow", level: 80 },
+        { name: "CRM Pipelines & Lead Management", level: 88 },
       ],
     },
     {
       icon: Cloud,
-      title: "Design & development Tools",
+      title: "Integrations & Automation Tools",
       skills: [
-        { name: "Figma", level: 88 },
-        { name: "Wordpress development", level: 95 },
-        { name: "Plugin Development", level: 50 },
-        { name: "Shopify", level: 75 },
+        { name: "Zapier", level: 90 },
+        { name: "Make (Integromat)", level: 88 },
+        { name: "API & Webhook Integrations", level: 85 },
+        { name: "Calendar & Appointment Automation", level: 82 },
+      ],
+    },
+    {
+      icon: Database,
+      title: "Data & CRM Backend",
+      skills: [
+        { name: "Data Mapping & Synchronization", level: 90 },
+        { name: "CRM Custom Fields & Modules", level: 85 },
+        { name: "MongoDB / PostgreSQL", level: 75 },
+        { name: "Reporting & Dashboard Automation", level: 80 },
       ],
     },
     {
       icon: Wrench,
-      title: "Tools & Platforms",
+      title: "AI-Powered Automation",
       skills: [
-        { name: "Git / GitHub", level: 95 },
-        { name: "VS Code", level: 95 },
-        { name: "Figma", level: 85 },
-        { name: "GSAP", level: 85 },
+        { name: "AI Chatbots for CRM & Support", level: 85 },
+        { name: "LLM Integration (Gemini / OpenAI)", level: 80 },
+        { name: "RAG-Based Automation Systems", level: 78 },
+        { name: "Voice AI (VAPI)", level: 75 },
       ],
     },
   ];
 
   const otherSkills = [
-    "team collaboration",
-    "Problem-solving",
-    "Communication",    
-    "Time management",
-    "Adaptability",
-    "Critical thinking",
-    "Creativity",
+    "Email, SMS & WhatsApp Automation",
+    "Lead Qualification & Routing",
+    "Facebook Ads Lead Handling",
+    "Marketing Funnel Automation",
+    "Task & Notification Automation",
+    "Business Process Automation",
+    "Client Requirement Analysis",
+    "Workflow Optimization",
+    "Error Handling & Automation Debugging",
+    "No-Code / Low-Code Solutions",
   ];
 
   return (
@@ -63,11 +66,11 @@ export function Skills() {
           {/* Section Header */}
           <div className="text-center mb-16">
             <span className="inline-block px-4 py-2 bg-primary/10 border border-primary/30 rounded-full mb-4">
-              Technical Skills
+              Automation Skills
             </span>
-            <h2 className="text-4xl md:text-5xl mb-4">My Tech Stack</h2>
+            <h2 className="text-4xl md:text-5xl mb-4">Automation Tech Stack</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              A collection of the languages, frameworks, and technologies I use to build things
+              CRM, workflow automation, and AI-driven systems for scalable business operations
             </p>
           </div>
 
@@ -104,7 +107,7 @@ export function Skills() {
 
           {/* Other Skills */}
           <div>
-            <h3 className="text-2xl mb-6 text-center">Other Technologies</h3>
+            <h3 className="text-2xl mb-6 text-center">Additional Automation Skills</h3>
             <div className="flex flex-wrap gap-3 justify-center">
               {otherSkills.map((skill, index) => (
                 <div
