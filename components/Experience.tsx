@@ -4,18 +4,29 @@ import { Card } from "./ui/card";
 export function Experience() {
   const experiences = [
     {
-      title: "AUTOMATION ENGINEER",
-      company: "EMRCains NSTP NUST",
+      title: "AI ENGINEER (HEALTHCARE AI & DECISION SUPPORT)",
+      company: "SIDRA Hospital QATAR (via EMRChains, NUST PAKISTAN)",
       period: "Nov 2024 - Present",
       description:
-        "Designing and implementing end-to-end automation solutions for CRM, business operations, and AI-powered workflows, with a focus on GoHighLevel (GHL), Zoho CRM, and system integrations.",
+        "Develop and deploy multimodal AI systems for healthcare decision support, including transformer-based models and RAG chatbots.",
       highlights: [
-        "Designed and deployed end-to-end automation workflows for CRM and operational processes",
-        "Built logic-based automations using triggers, conditions, pipelines, and task orchestration",
-        "Implemented GoHighLevel (GHL) and Zoho CRM automations for lead management and follow-ups",
-        "Integrated AI-powered assistants into workflows using APIs and webhooks",
-        "Developed and managed third-party integrations using Zapier, Make, and REST APIs",
-        "Automated data synchronization, tagging, notifications, and reporting, reducing manual effort by 50%",
+        "Fine-tuned vision-language and large language models (Qwen2.5-VL-3B, Gemini API, Mistral-7B) using LoRA and QLoRA for clinical tasks",
+        "Built retrieval-augmented generation (RAG) pipelines for hospital-specific knowledge retrieval",
+        "Integrated AI-driven clinical decision support into real-time medical imaging workflows",
+        "Emphasized interpretability, uncertainty estimation, and safety for deployment in clinical environments",
+        "Developed AI-based conversational systems for multilingual doctor-patient interactions",
+      ],
+    },
+    {
+      title: "AI Automation Engineer – Applied Decision Systems",
+      company: "Lionheart Consultants (UK, Remote)",
+      period: "Jan 2026 - Present",
+      description:
+        "Designed and implemented AI-powered workflow automation systems for operational decision-making.",
+      highlights: [
+        "Automated CRM, booking, and operational workflows with intelligent systems",
+        "Developed form-based interaction flows and avatar-driven user interfaces",
+        "Integrated AI-driven assistants into business processes using APIs and LangChain",
       ],
     },
     {

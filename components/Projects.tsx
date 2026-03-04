@@ -9,10 +9,64 @@ import Image from "next/image";
 export function Projects() {
   const [activeFilter, setActiveFilter] = useState("All");
 
-  const filters = ["All", "GHL", "Zoho", "Automation", "AI"];
+  const filters = ["All", "AI/ML", "Automation", "Healthcare", "GenAI"];
 
   const projects = [
+        
     {
+      title: "Multimodal Vision-Language Models for Medical Imaging",
+      description:
+        "Fine-tuned Qwen2.5-VL-3B vision-language transformer models for medical imaging tasks using LoRA & QLoRA. Projects include Alzheimer's detection from MRI scans, chest X-ray analysis, and fracture localization with visual grounding.",
+      image: "/1.jpg",
+      tags: [
+        "Qwen2.5-VL-3B",
+        "Vision-Language Models",
+        "LoRA",
+        "QLoRA",
+        "Medical Imaging",
+        "Alzheimer's Detection",
+        "Chest X-ray",
+        "Fracture Detection",
+        "Python",
+        "Deep Learning"
+      ],
+      category: "AI/ML",
+    },
+    {
+      title: "Doctor–Patient Conversational AI App",
+      description:
+        "Developed a multilingual AI medical assistant for real-time doctor–patient conversations, automating summaries, prescriptions, and billing codes. Deployed at EMRChains NSTP for clinical efficiency.",
+      video: "/video.mp4", // your video file in /public folder
+      tags: [
+        "Conversational AI",
+        "Whisper",
+        "Gemini API",
+        "LangChain",
+        "FAISS",
+        "Multilingual",
+        "Clinical Automation",
+        "Prescriptions",
+        "ICD/HCC/E&M Codes"
+      ],
+      category: "AI/ML",
+      link: "https://emrchains.com/dr-patient",
+    },
+    {
+      title: "RAG-Based Chatbots",
+      description:
+        "Developed Retrieval-Augmented Generation (RAG) chatbots for intelligent Q&A and knowledge retrieval workflows across multiple healthcare organizations.",
+      image: "/smile.png",
+      tags: ["RAG", "Chatbots", "LLMs", "LangChain", "Python"],
+      category: "AI/ML",
+      links: [
+        { name: "Smile Center Islamabad", url: "https://www.smilecenterislamabad.com/" },
+        { name: "Pak Healthcare", url: "https://pakhealthcare.pk/" },
+        { name: "CDC Hospital", url: "https://cdc.net.pk/" },
+        { name: "Maroof International Hospital", url: "https://www.maroof.com.pk/" },
+        { name: "EMRChains", url: "https://emrchains.com/" }
+      ]
+    },
+     {
       title: "GoHighLevel CRM Automation – Case Study",
       description:
         "Designed end-to-end CRM automation workflows with lead capture, pipeline management, notifications, and follow-ups.",
@@ -20,6 +74,7 @@ export function Projects() {
       tags: ["GHL", "CRM", "Automation", "Email/SMS/WhatsApp"],
       category: "GHL",
     },
+
     {
       title: "Zoho Flow Automation – Prototype",
       description:
@@ -92,7 +147,16 @@ export function Projects() {
                 className="bg-card border-border hover:border-primary/50 transition-all overflow-hidden group"
               >
                 <div className="relative h-48 overflow-hidden">
-                  {project.image ? (
+                  {project.video ? (
+                    <video
+                      src={project.video}
+                      className="w-full h-full object-cover"
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      />
+                  ) : project.image ? (                      
                     <Image
                       src={project.image}
                       alt={project.title}
@@ -122,6 +186,22 @@ export function Projects() {
                       </Badge>
                     ))}
                   </div>
+                  {/* Links to live chatbots */}
+                  {project.links && (
+                    <div className="flex flex-wrap gap-2 mt-2">
+                      {project.links.map((link, i) => (
+                        <a
+                          key={i}
+                          href={link.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="px-3 py-1 bg-primary/10 text-primary rounded-full text-xs hover:bg-primary/20 transition-all"
+                        >
+                          {link.name}
+                        </a>
+                      ))}
+                    </div>
+                  )}
                 </div>
               </Card>
             ))}

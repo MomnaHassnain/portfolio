@@ -154,17 +154,16 @@ export function Hero() {
                 ref={subtitleRef}
                 className="text-xl md:text-2xl lg:text-3xl text-primary mb-4 md:mb-6"
               >
-                  AI Engineer & Automation Specialist | Zoho, GHL, Healthcare AI
+                  AI Engineer & Automation Specialist | RAG Chatbots, Finetuning Transformers, Zoho, GHL, Healthcare AI
               </p>
 
               <p
                 ref={descRef}
                 className="text-sm md:text-base text-muted-foreground max-w-xl mx-auto md:mx-0 mb-6 md:mb-8 leading-relaxed"
               >
-               AI Engineer and Researcher with expertise in automation, healthcare AI, and intelligent systems.
-               Skilled in building RAG-based chatbots, workflow automation, Zoho & GHL integrations, and AI-powered
-               solutions using Python, LLMs, and cloud platforms. Experienced in deploying AI for medical decision support 
-               and real-time automation.
+               Experienced in deploying multimodal AI systems for healthcare, developing RAG-based chatbots, fine-tuning
+                large language & vision-language models, and building automation workflows with Zoho & GHL. Skilled in
+                Python, PyTorch, TensorFlow, and cloud-based AI solutions for clinical decision support and real-time analysis.
               </p>
 
               {/* Social Links */}
@@ -276,7 +275,7 @@ export function Hero() {
                   <div className="code-line overflow-hidden whitespace-nowrap pl-4">
                     <span className="text-blue-300">role</span>
                     <span className="text-foreground/60">:</span>{" "}
-                    <span className="text-green-400">'AI & Automation Engineer'</span>
+                    <span className="text-green-400">'AI Engineer & Automation Specialist '</span>
                     <span className="text-foreground/60">,</span>
                   </div>
                   <div className="code-line overflow-hidden whitespace-nowrap pl-4">

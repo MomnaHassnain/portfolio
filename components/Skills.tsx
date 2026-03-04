@@ -15,6 +15,16 @@ export function Skills() {
       ],
     },
     {
+      icon: Workflow,
+      title: "AI & Machine Learning",
+      skills: [
+        { name: "Transformer Fine-Tuning (LoRA / QLoRA)", level: 90 },
+        { name: "RAG Chatbots & Retrieval Systems", level: 88 },
+        { name: "Deep Learning (CNN, RNN, LSTM, GRU)", level: 85 },
+        { name: "Predictive Analytics & Healthcare AI", level: 87 },
+      ],
+    },
+    {
       icon: Cloud,
       title: "Integrations & Automation Tools",
       skills: [
@@ -25,38 +35,36 @@ export function Skills() {
       ],
     },
     {
-      icon: Database,
-      title: "Data & CRM Backend",
+      icon: Cloud,
+      title: "Integrations & AI Systems",
       skills: [
-        { name: "Data Mapping & Synchronization", level: 90 },
-        { name: "CRM Custom Fields & Modules", level: 85 },
-        { name: "MongoDB / PostgreSQL", level: 75 },
-        { name: "Reporting & Dashboard Automation", level: 80 },
+        { name: "LangChain / LLM Pipelines", level: 85 },
+        { name: "API & Webhook Integrations", level: 82 },
+        { name: "Cloud Deployment (AWS / GCP / Azure)", level: 80 },
+        { name: "Workflow Automation with AI Assistants", level: 83 },
       ],
     },
     {
       icon: Wrench,
       title: "AI-Powered Automation",
       skills: [
-        { name: "AI Chatbots for CRM & Support", level: 85 },
-        { name: "LLM Integration (Gemini / OpenAI)", level: 80 },
-        { name: "RAG-Based Automation Systems", level: 78 },
-        { name: "Voice AI (VAPI)", level: 75 },
+        { name: "Conversational AI & RAG Systems", level: 88 },
+        { name: "Voice AI & VAPI Systems", level: 80 },
+        { name: "Clinical Workflow Automation", level: 85 },
+        { name: "Business Process Automation with AI", level: 82 },
       ],
     },
   ];
 
   const otherSkills = [
-    "Email, SMS & WhatsApp Automation",
-    "Lead Qualification & Routing",
-    "Facebook Ads Lead Handling",
-    "Marketing Funnel Automation",
-    "Task & Notification Automation",
-    "Business Process Automation",
-    "Client Requirement Analysis",
-    "Workflow Optimization",
-    "Error Handling & Automation Debugging",
-    "No-Code / Low-Code Solutions",
+    "Python & ML Libraries (PyTorch, TensorFlow)",
+    "Model Evaluation & Hyperparameter Tuning",
+    "Prompt Engineering for LLMs",
+    "Medical Decision Support AI",
+    "Data Cleaning & Preprocessing Pipelines",
+    "AI Experimentation & Research",
+    "Workflow Optimization & Automation Debugging",
+    "No-Code / Low-Code AI Solutions",
   ];
 
   return (
@@ -66,11 +74,11 @@ export function Skills() {
           {/* Section Header */}
           <div className="text-center mb-16">
             <span className="inline-block px-4 py-2 bg-primary/10 border border-primary/30 rounded-full mb-4">
-              Automation Skills
+              AI & Automation Skills
             </span>
-            <h2 className="text-4xl md:text-5xl mb-4">Automation Tech Stack</h2>
+            <h2 className="text-4xl md:text-5xl mb-4">Technical Expertise</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              CRM, workflow automation, and AI-driven systems for scalable business operations
+               AI, Machine Learning, and automation skills applied in healthcare and business operations.
             </p>
           </div>
 
